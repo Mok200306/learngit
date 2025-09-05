@@ -1,0 +1,17 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+#
+# The above will handle all files NOT found below
+#
+# These files are text and should be normalized (Convert CRLF to LF)
+*.txt text
+*.md text
+*.html text
+*.css text
+*.js text
+
+# These files are binary and should be left untouched
+# (Tell git they are binary so that it does not try to convert them)
+*.png binary
+*.jpg binary
